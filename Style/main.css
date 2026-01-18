@@ -1,0 +1,67 @@
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+/* Shared style */
+
+.btn{
+padding: 15px 50px;
+border-radius: 1000px;
+font-size: 20px;
+font-weight: 500;
+ background: linear-gradient(
+  30deg,
+  #F7E93F,
+  #FB09B4,
+  #9100F8
+);
+
+}
+
+/* header style */
+header{
+   background-color: rgba(26, 11, 46, 1);
+}
+
+
+/* nav style */
+nav .nav-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: aliceblue;
+   padding: 15px;
+
+}
+nav h2{
+   color: white;
+   font-size: 30px;
+   font-weight: 600;
+
+}
+.gradient-text{
+   background: linear-gradient(90deg,#F7E93F,#FB09B4,#9100F8);
+}
+
+
+nav .menu {
+   display: flex;
+   justify-content: space-around;
+   font-size: 16px;
+   font-weight: 400;
+   gap: 30px ;
+   list-style: none;
+}
+.menu a{
+   text-decoration: none;
+   color: aliceblue;
+}
+
+
+/* Main section style */
+
+
+/* footer style */
