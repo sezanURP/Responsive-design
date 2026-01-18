@@ -6,9 +6,11 @@
    box-sizing: border-box;
 }
 /* Shared style */
-
+.color{
+   color: white;
+}
 .btn{
-padding: 15px 50px;
+padding: 10px 40px;
 border-radius: 1000px;
 font-size: 20px;
 font-weight: 500;
@@ -22,7 +24,7 @@ font-weight: 500;
 }
 
 /* header style */
-header{
+header ,#about {
    background-color: rgba(26, 11, 46, 1);
 }
 
@@ -59,9 +61,107 @@ nav .menu {
    text-decoration: none;
    color: aliceblue;
 }
+#hero{
+   background: url(/B13-A02-TechWave/assets/hero-bg.png);
+   background-repeat: no-repeat;
+   
+   background-size: 100%;
+   
+
+}
+#hero .gradient-box {
+   width: 350px;
+   height: 350px; 
+   border-radius:50% ;
+   display: flex;
+   margin: 130px 460px 0 460px;
+   align-items: center;
+   justify-content: center;
+   
+   background: linear-gradient(
+  30deg,
+  #F7E93F,
+  #FB09B4,
+  #9100F8
+);
+}
+#hero .mic-part .new {
+   background-color: #46e846;
+   padding: 8px 16px;
+   position: absolute;
+   margin: 15px 25px 300px 250px;
+   border-radius: 1000px;
+  
+}
+.heading{
+text-align: center;
+margin-top: 50px;
+margin-bottom: 30px;
+}
+.heading h2 {
+   font-size: 60px;
+   font-weight: bolder;
+   color: #ffffff;
+   padding: 10px;
+
+}
+.heading p{
+    font-size: 16px;
+   font-weight: 400;
+   color: #ffffff;
+}
+.button{
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+}
+.Subscribe{
+   background-color: transparent;
+   border: 1px solid #46e846;
+   font-size: 20px;
+   font-weight: 500;
+   padding: 10px 40px;
+   color: #46e846;
+   border-radius: 1000px;
+   
+}
+
 
 
 /* Main section style */
+#about .about-container{
+   text-align: center;
+   padding: 50px ;
+}
+#about .about-container h2{
+   font-size: 48px;
+   font-weight: 800;
 
+   margin-bottom: 30px;
+
+}
+#about .about-container p{
+    font-size: 16px;
+   font-weight: 400;
+      padding: 0 200px 0 200px ;
+   margin-bottom: 30px;
+   line-height: 1.2;
+}
+#about .about-container hr{
+   margin: 0 80px 0 80px;
+}
+#about .about-container .value{
+   display: flex;
+   justify-content: space-around;
+   margin-top: 80px;
+   gap: 10px;
+   /* justify-content: space-around; */
+   
+}
+#about .about-container .value-card{
+   border:1px solid #46e846;
+   padding: 0;
+   width: 100%
+}
 
 /* footer style */
