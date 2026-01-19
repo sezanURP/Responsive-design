@@ -1,30 +1,29 @@
-
-
-*{
+* {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
+
 /* Shared style */
-.color{
+.color {
    color: white;
 }
-.btn{
-padding: 10px 40px;
-border-radius: 1000px;
-font-size: 20px;
-font-weight: 500;
- background: linear-gradient(
-  30deg,
-  #F7E93F,
-  #FB09B4,
-  #9100F8
-);
+
+.btn {
+   padding: 10px 40px;
+   border-radius: 1000px;
+   font-size: 20px;
+   font-weight: 500;
+   background: linear-gradient(30deg,
+         #F7E93F,
+         #FB09B4,
+         #9100F8);
 
 }
 
 /* header style */
-header ,#about {
+header,
+#about {
    background-color: rgba(26, 11, 46, 1);
 }
 
@@ -38,14 +37,16 @@ nav .nav-container {
    padding: 15px;
 
 }
-nav h2{
+
+nav h2 {
    color: white;
    font-size: 30px;
    font-weight: 600;
 
 }
-.gradient-text{
-   background: linear-gradient(90deg,#F7E93F,#FB09B4,#9100F8);
+
+.gradient-text {
+   background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
 }
 
 
@@ -54,50 +55,54 @@ nav .menu {
    justify-content: space-around;
    font-size: 16px;
    font-weight: 400;
-   gap: 30px ;
+   gap: 30px;
    list-style: none;
 }
-.menu a{
+
+.menu a {
    text-decoration: none;
    color: aliceblue;
 }
-#hero{
+
+#hero {
    background: url(/B13-A02-TechWave/assets/hero-bg.png);
    background-repeat: no-repeat;
-   
+
    background-size: 100%;
-   
+
 
 }
+
 #hero .gradient-box {
    width: 350px;
-   height: 350px; 
-   border-radius:50% ;
+   height: 350px;
+   border-radius: 50%;
    display: flex;
    margin: 130px 460px 0 460px;
    align-items: center;
    justify-content: center;
-   
-   background: linear-gradient(
-  30deg,
-  #F7E93F,
-  #FB09B4,
-  #9100F8
-);
+
+   background: linear-gradient(30deg,
+         #F7E93F,
+         #FB09B4,
+         #9100F8);
 }
+
 #hero .mic-part .new {
    background-color: #46e846;
    padding: 8px 16px;
    position: absolute;
    margin: 15px 25px 300px 250px;
    border-radius: 1000px;
-  
+
 }
-.heading{
-text-align: center;
-margin-top: 50px;
-margin-bottom: 30px;
+
+.heading {
+   text-align: center;
+   margin-top: 50px;
+   margin-bottom: 30px;
 }
+
 .heading h2 {
    font-size: 60px;
    font-weight: bolder;
@@ -105,17 +110,20 @@ margin-bottom: 30px;
    padding: 10px;
 
 }
-.heading p{
-    font-size: 16px;
+
+.heading p {
+   font-size: 16px;
    font-weight: 400;
    color: #ffffff;
 }
-.button{
+
+.button {
    display: flex;
    justify-content: center;
    gap: 30px;
 }
-.Subscribe{
+
+.Subscribe {
    background-color: transparent;
    border: 1px solid #46e846;
    font-size: 20px;
@@ -123,45 +131,206 @@ margin-bottom: 30px;
    padding: 10px 40px;
    color: #46e846;
    border-radius: 1000px;
-   
+
 }
 
 
 
 /* Main section style */
-#about .about-container{
+#about .about-container {
    text-align: center;
-   padding: 50px ;
+   padding: 50px;
 }
-#about .about-container h2{
+
+#about .about-container h2 {
    font-size: 48px;
    font-weight: 800;
 
    margin-bottom: 30px;
 
 }
-#about .about-container p{
-    font-size: 16px;
+
+#about .about-container p {
+   font-size: 16px;
    font-weight: 400;
-      padding: 0 200px 0 200px ;
+   padding: 0 200px 0 200px;
    margin-bottom: 30px;
    line-height: 1.2;
 }
-#about .about-container hr{
+
+#about .about-container hr {
    margin: 0 80px 0 80px;
 }
-#about .about-container .value{
+
+#about .about-container .value {
    display: flex;
    justify-content: space-around;
    margin-top: 80px;
    gap: 10px;
    /* justify-content: space-around; */
-   
+
 }
-#about .about-container .value-card{
-   border:1px solid #46e846;
+
+#about .about-container .value-card {
+   border: 1px solid #46e846;
    padding: 0;
-   width: 100%
+   justify-content: center;
+   gap: 20px;
+   width: 200px;
+}
+
+#about .about-container .value-card h2 {
+   color: #46e846;
+}
+
+#about .about-container .value-card p {
+   color: #ffffff;
+   align-items: center;
+   display: flex;
+}
+
+/* Grid-section style */
+
+#grid {
+   background-color: rgba(35, 14, 61, 0.8);
+}
+
+#grid h2 {
+   font-size: 48px;
+   font-weight: 600;
+   text-align: center;
+   padding-top: 40px;
+   color: #ffffff;
+}
+
+.grid-container>* {
+
+   padding: 20px;
+
+}
+
+.grid-container {
+   display: grid;
+   grid-template-areas:
+      "aside upper upper"
+      "aside middle middle"
+      "bottom-1 bottom-1 bottom-2"
+   ;
+   margin: 120px 230px 0px 230px;
+   gap: 30px;
+   padding-bottom: 100px;
+
+}
+
+.upper {
+   grid-area: upper;
+   background-color: rgba(53, 17, 101, 0.4);
+   border-radius: 30px;
+
+}
+
+aside {
+   grid-area: aside;
+   background-color: rgba(53, 17, 101, 0.4);
+   border-radius: 30px;
+}
+
+.middle {
+   grid-area: middle;
+   background-color: rgba(53, 17, 101, 0.4);
+   border-radius: 30px;
+}
+
+.bottom-1 {
+   grid-area: bottom-1;
+   background-color: rgba(53, 17, 101, 0.4);
+   border-radius: 30px;
+}
+
+.bottom-2 {
+   grid-area: bottom-2;
+   background-color: rgba(53, 17, 101, 0.4);
+   border-radius: 30px;
+}
+
+.grid-container h3,
+p {
+   padding: 10px;
+   color: #ffffff;
+}
+
+
+
+
+#episode {
+   background-color: rgba(26, 11, 46, 1);
+}
+
+#episode h2 {
+   text-align: center;
+   color: white;
+   font-size: 48px;
+   font-weight: 800;
+   padding-top: 80px;
+}
+
+.episode-container {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin: 0px 50px auto 50px;
+   padding-top: 80px;
+
+
+}
+
+.episode-container .ecard {
+   width: 330px;
+   gap: 20px;
+   padding: 0px 0px 20px 0px;
+   border-radius: 30px;
+   background-color: rgba(53, 17, 101, 0.4);
+
+}
+
+.episode-container h3,
+p,
+.host h3 {
+   color: #ffffff;
+}
+
+.episode-container h3 {
+   padding-bottom: 15px;
+}
+
+
+
+
+.host {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   border-radius: 30px;
+   background-color: rgba(53, 17, 101, 0.4);
+   margin: 50px 200px 50px 200px;
+   padding: 30px;
+   
+
+}
+
+.host div h3{
+     padding-left: 10px;
+   /* border: 1px dotted green; */
+
+
 }
 
 /* footer style */
+footer {
+   text-align: center;
+}
+footer .media{
+   display: flex;
+   justify-content: center;
+}
