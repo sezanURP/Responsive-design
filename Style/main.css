@@ -18,6 +18,7 @@
          #F7E93F,
          #FB09B4,
          #9100F8);
+         cursor: pointer;
 
 }
 .hide, .mobile {
@@ -110,8 +111,9 @@ nav .menu {
    border-radius: 1000px;
 
 }
-#hero .mic-part .new{
+#hero .mic-part .new ,.navbtn ,.Subscribe {
   animation: float 2s ease-in-out infinite;
+  cursor: pointer;
 }
 
 @keyframes float {
