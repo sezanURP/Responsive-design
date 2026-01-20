@@ -10,7 +10,7 @@
 }
 
 .btn {
-   padding: 10px 40px;
+   padding: 10px 30px;
    border-radius: 1000px;
    font-size: 20px;
    font-weight: 500;
@@ -19,6 +19,9 @@
          #FB09B4,
          #9100F8);
 
+}
+.hide, .mobile {
+   display: none;
 }
 
 /* header style */
@@ -29,6 +32,9 @@ header,
 
 
 /* nav style */
+nav{
+   max-width: 1600px;
+}
 nav .nav-container {
    display: flex;
    justify-content: space-between;
@@ -85,7 +91,8 @@ nav .menu {
    height: 350px;
    border-radius: 50%;
    display: flex;
-   margin: 130px 460px 0 460px;
+   margin: 0 auto;
+  
    align-items: center;
    justify-content: center;
 
@@ -102,6 +109,21 @@ nav .menu {
    margin: 15px 25px 300px 250px;
    border-radius: 1000px;
 
+}
+#hero .mic-part .new{
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+.icon-10x{
+   font-size: 10em;
 }
 
 .heading {
@@ -146,7 +168,7 @@ nav .menu {
 /* Main section style */
 #about .about-container {
    text-align: center;
-   padding: 50px;
+   padding:50px;
 }
 #about .about-container hr{
    color: rgba(49, 43, 43, 0.039);
@@ -180,7 +202,7 @@ nav .menu {
    justify-content: space-around;
    margin-top: 80px;
    gap: 10px;
-   /* justify-content: space-around; */
+ 
 
 }
 
@@ -192,7 +214,7 @@ nav .menu {
    width: 200px;
 }
 
-#about .about-container .value-card h2 {
+#about .about-container .value-card-1,  .value-card-2,  .value-card-3,  .value-card-4 h2 {
    color: #46e846;
 }
 
@@ -229,6 +251,7 @@ nav .menu {
       "aside middle middle"
       "bottom-1 bottom-1 bottom-2"
    ;
+   
    margin: 80px 230px 0px 230px;
    gap: 30px;
    padding-bottom: 100px;
@@ -266,9 +289,8 @@ aside {
    border-radius: 30px;
 }
 
-.grid-container h3,
-p {
-   padding: 10px;
+.grid-container h3 {
+   padding: 15px;
    color: #ffffff;
 }
 
@@ -291,19 +313,22 @@ p {
    display: flex;
    justify-content: space-around;
    align-items: center;
-   margin: 0px 50px auto 50px;
+   margin: 0 auto;
    padding-top: 80px;
 
 
 }
 
 .episode-container .ecard {
-   width: 330px;
+   width: 300px;
    gap: 20px;
-   padding: 0px 0px 20px 0px;
+   /* padding: 0px 0px 20px 0px; */
    border-radius: 30px;
    background-color: rgba(53, 17, 101, 0.4);
 
+}
+.episode-container .ecard iframe{
+  padding-bottom: 20px;
 }
 
 .episode-container h3,
@@ -327,14 +352,21 @@ p,
    border-radius: 30px;
    background-color: rgba(53, 17, 101, 0.4);
    margin: 50px 200px 0px 200px;
-   padding: 30px;
-   
+}
+
+.host .host-container{
+   margin-bottom: 50px;
+}
+.host div h3{
+
+     padding-left: 0 auto;
+     font-size: 24px;
+     font-weight: 500;
 
 }
 
-.host div h3{
-     padding-left: 10px;
-   /* border: 1px dotted green; */
+.host div img{
+   padding: 20px;
 }
 .host .icon-container {
    display: flex;
@@ -351,6 +383,7 @@ footer h2{
   color: #ffffff;
    text-align: center;
    padding: 80px 0 15px 0;
+  
 }
 footer .media{
    display: flex;
@@ -363,7 +396,8 @@ footer .media{
 footer{
    background: url(../B13-A02-TechWave/assets/footer-bg.png);
    background-size: 100%;
-   height: 400px;
+
+  background-repeat: no-repeat;
 }
 .footer{
    padding-top:20px ;
@@ -382,4 +416,8 @@ footer{
    font-size:16px ;
    font-weight: 400;
 }
+
+/* mobile device responsive*/
+
+
 
